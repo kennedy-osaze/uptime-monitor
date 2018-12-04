@@ -1,0 +1,36 @@
+<div class="page-header">
+    <h2>Create an Account</h2>
+</div>
+
+<form id="account-create" class="mt-30" method="post" action="/api/users">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="alert-container" id="alert-account-create"></div>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="John" min="3" max="255" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Doe" min="3" max="255" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="08123456789" min="11" max="11" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Choose a Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" min="8" required>
+            </div>
+            <div class="checkbox">
+                <label for="tosAgreement">
+                    <input type="checkbox" id="tosAgreement" name="tosAgreement"> Do you agree with the terms and conditions?
+                </label>
+            </div>
+
+            <div class="pull-right">
+                <button type="submit" class="btn btn-success btn-lg">Get started</button>
+            </div>
+        </div>
+    </div>
+</form>

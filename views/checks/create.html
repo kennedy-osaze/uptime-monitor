@@ -1,0 +1,96 @@
+<div class="page-header">
+    <h2>Create a New Check</h2>
+</div>
+
+<ol class="breadcrumb">
+    <li><a href="/dashboard">Dashboard</a></li>
+    <li><a href="checks/all">Checks</a></li>
+    <li class="active">Create Check</li>
+</ol>
+
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+        <form action="/api/checks" method="post" class="mt-30" id="checks-create">
+            <div class="alert-container" id="alert-create-check" role="alert"></div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="httpMethod">HTTP Method</label>
+                        <select class="form-control" name="httpMethod" id="httpMethod" required>
+                            <option value="get">GET</option>
+                            <option value="post">POST</option>
+                            <option value="put">PUT</option>
+                            <option value="delete">DELETE</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="protocol">Protocol</label>
+                        <select class="form-control" id="protocol" name="protocol" required>
+                            <option value="">Select Protocol</option>
+                            <option value="https" selected>https://</option>
+                            <option value="http">http://</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="url">URL (not including Protocol)</label>
+                        <input type="text" class="form-control" name="url" id="url" min="3" placeholder="example.com/my/path" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-20">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="timeoutSeconds">Timeout</label>
+                        <select id="timeoutSeconds" class="form-control" name="timeoutSeconds" required>
+                            <option value="1">1 second</option>
+                            <option value="2">2 seconds</option>
+                            <option value="3">3 seconds</option>
+                            <option value="4">4 seconds</option>
+                            <option value="5">5 seconds</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="form-group">
+                        <label for="successCodes">Success Codes (HTTP codes that should represent "up")</label>
+                        <div class="checkbox-group pt-10">
+                            <div class="checkbox-inline mr-10">
+                                <label><input type="checkbox" class="multiSelect intVal" name="successCodes" value="200" checked>200</label>
+                            </div>
+                            <div class="checkbox-inline mr-10">
+                                <label><input type="checkbox" class="multiSelect intVal" name="successCodes" value="201" checked>201</label>
+                            </div>
+                            <div class="checkbox-inline mr-10">
+                                <label><input type="checkbox" class="multiSelect intVal" name="successCodes" value="301">301</label>
+                            </div>
+                            <div class="checkbox-inline mr-10">
+                                <label><input type="checkbox" class="multiSelect intVal" name="successCodes" value="302">302</label>
+                            </div>
+                            <div class="checkbox-inline mr-10">
+                                <label><input type="checkbox" class="multiSelect intVal" name="successCodes" value="400">400</label>
+                            </div>
+                            <div class="checkbox-inline mr-10">
+                                <label><input type="checkbox" class="multiSelect intVal" name="successCodes" value="403">403</label>
+                            </div>
+                            <div class="checkbox-inline mr-10">
+                                <label><input type="checkbox" class="multiSelect intVal" name="successCodes" value="406">406</label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label><input type="checkbox" class="multiSelect intVal" name="successCodes" value="500">500</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-20">
+                <button type="submit" class="btn btn-lg btn-success">Create Check</button>
+            </div>
+        </form>
+    </div>
+</div>

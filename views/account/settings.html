@@ -1,0 +1,109 @@
+<div class="row">
+    <div class="col-sm-3">
+        <p class="lead">Account Settings</p>
+
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" class="active"><a href="#account-details" data-toggle="pill">Account Details</a></li>
+            <li role="presentation"><a href="#password" data-toggle="pill">Password</a></li>
+        </ul>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="account-details">
+                <form id="account-details-form" action="/api/users" method="post">
+                    <input type="hidden" name="_method" value="PUT">
+
+                    <h3>Edit your account details</h3>
+                    <hr>
+
+                    <div class="alert-container" id="alert-details" role="alert"></div>
+
+                    <input type="hidden" name="phone" class="hiddenPhone">
+
+                    <div class="form-group">
+                        <label for="displayPhone">Phone</label>
+                        <input type="text" class="form-control" id="displayPhone" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="John" min="3" max="255"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Doe" min="3" max="255" required>
+                    </div>
+                    <div class="pull-right mt-20">
+                        <button type="submit" class="btn bg-blue btn-lg rad-2">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="password">
+                <form id="password-form" action="/api/users" method="post">
+                    <input type="hidden" name="_method" value="PUT">
+
+                    <h3>Change your password</h3>
+                    <hr>
+
+                    <div class="alert-container" id="alert-password" role="alert"></div>
+
+                    <input type="hidden" name="phone" class="hiddenPhone">
+
+                    <div class="form-group">
+                        <label for="password">Enter new password</label>
+                        <input type="password" id="password" name="password" class="form-control" min="8" required>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="oldPassword">Enter old password</label>
+                        <input type="password" id="oldPassword" name="oldPassword" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">Enter new password</label>
+                        <input type="password" id="newPassword" name="newPassword" class="form-control" min="8" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Enter new password again</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
+                    </div> -->
+
+                    <div class="pull-right mt-20">
+                        <button type="submit" class="btn bg-blue btn-lg">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-3 text-center">
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#delete-modal">Delete Account</button>
+    </div>
+</div>
+
+<div class="modal fade" id="delete-modal" tabindex="-1" role="dialog">
+    <form action="/api/users" id ="account-delete" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        
+        <input type="hidden" name="phone" class="hiddenPhone">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Are you sure you want to delete your account?</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="alert-container" id="alert-password" role="alert"></div>
+
+                    <p>Once your account is deleted, you can no longer have access to it.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-danger">Delete Account</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

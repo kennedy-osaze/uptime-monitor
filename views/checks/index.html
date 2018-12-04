@@ -1,0 +1,35 @@
+<div class="page-header">
+    <div class="row">
+        <div class="col-sm-10">
+            <h2>My Checks List</h2>
+        </div>
+        <div class="col-sm-2 text-right mt-30" id="create-check-button">
+            <a href="/checks/create" class="btn btn-success">Create a Check</a>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-20">
+    <div class="col-sm-12">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover" id="check-table">
+                <thead>
+                    <tr>
+                        <th class="text-uppercase">Method</th>
+                        <th class="text-uppercase">Protocol</th>
+                        <th class="text-uppercase">URL</th>
+                        <th class="text-uppercase text-center">State</th>
+                        <th class="text-uppercase">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="no-checks-message">
+                        <td colspan="5" class="text-center">
+                            <h6>You have no checks, please create one!</h6>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

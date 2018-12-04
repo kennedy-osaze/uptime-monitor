@@ -1,0 +1,310 @@
+/* CSS Styles for the application */
+
+body {
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+nav {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.content-wrapper, .footer {
+    padding-top: 15px;
+}
+
+.navbar-grey {
+    background-color: #263238;
+    border-color: #263238e0;
+    color: #fff;
+}
+
+.navbar-nav>li>a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-brand, .navbar-brand:focus, .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    background-color: rgba(0, 0, 0, 0.29);
+    color: #fff;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.29);
+    color: #fff;
+}
+
+.btn[class*=bg-]:hover, .btn[class*=bg-]:focus, .btn[class*=bg-].focus {
+    color: #fff;
+}
+
+.bg-pink {
+    background-color: #E91E63;
+    border-color: #E91E63;
+    color: #fff;
+}
+
+.bg-danger-deep {
+    background-color: #C62828;
+    border-color: #C62828;
+    color: #fff;
+}
+
+.bg-danger-faint {
+    background-color: #E57373;
+    border-color: #E57373;
+    color: #fff;
+}
+
+.bg-violet {
+    background-color: #9C27B0;
+    border-color: #9C27B0;
+    color: #fff;
+}
+
+.bg-purple {
+    background-color: #5E35B1;
+    border-color: #5E35B1;
+    color: #fff;
+}
+
+.bg-blue {
+    background-color: #039BE5;
+    border-color: #039BE5;
+    color: #fff;
+}
+
+.bg-teal {
+    background-color: #00897B;
+    border-color: #00897B;
+    color: #fff;
+}
+
+.bg-green {
+    background-color: #8BC34A;
+    border-color: #8BC34A;
+    color: #fff;
+}
+
+.bg-orange {
+    background-color: #FF9800;
+    border-color: #FF9800;
+    color: #fff;
+}
+
+.bg-brown {
+    background-color: #795548;
+    border-color: #795548;
+    color: #fff;
+}
+
+.bg-indigo {
+    background-color: #3F51B5;
+    border-color: #3F51B5;
+    color: #fff;
+}
+
+.bg-grey {
+    background-color: #777777;
+    border-color: #777777;
+    color: #fff;
+}
+
+.bg-slate {
+    background-color: #607D8B;
+    border-color: #607D8B;
+    color: #fff;
+}
+
+.position-right {
+    margin-left: 5px;
+}
+
+.position-right-20 {
+    margin-left: 20px;
+}
+
+.position-left {
+    margin-right: 5px;
+}
+
+.mt-5 {
+    margin-top: 5px !important;
+}
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mt-5 {
+    margin-top: 5px !important;
+}
+
+.pt-10 {
+    padding-top: 10px !important;
+}
+
+.pt-15 {
+    padding-top: 15px !important;
+}
+
+.pt-20 {
+    padding-top: 20px !important;
+}
+
+.pb-5 {
+    padding-bottom: 5px !important;
+}
+
+.pb-10 {
+    padding-bottom: 10px !important;
+}
+
+.pb-15 {
+    padding-bottom: 15px !important;
+}
+
+.pb-20 {
+    padding-bottom: 20px !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.content-header-heading {
+    margin: 0;
+    font-size: 24px;
+}
+
+.content-header-heading>small {
+    font-size: 15px;
+    display: inline-block;
+    padding-left: 4px;
+    font-weight: 300;
+}
+
+.pbt-3 {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+.pbt-2 {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.text-semibold {
+    font-weight: 500;
+}
+
+.font-15 {
+    font-size: 15px !important;
+}
+
+.faint {
+    color: #80808094 !important;
+}
+
+.pg-header {
+    background-color: transparent;
+}
+
+.pg-header h1 small {
+    font-size: 50%;   
+}
+
+.pg-header .buttons {
+    margin-top: 60px;
+}
+
+.btn, .form-control, .btn-lg {
+    border-radius: 2px !important;
+}
+
+.nav-pills>li>a {
+    border-radius: 2px;
+}
+
+.nav-pills>li>a:focus, .nav.nav-pills>li>a:hover {
+    background-color: #eee;
+    color: #23527c;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.form-control:focus {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    outline: -webkit-focus-ring-color auto 5px;
+    border-color: #66afe9;
+}
+
+.navbar ul.navbar-nav li.logged-in {
+    display: none;
+}
+
+body.logged-in .navbar ul.navbar-nav li.logged-in {
+    display: block;
+}
+
+body.logged-in .navbar ul.navbar-nav li.logged-out {
+    display: none;
+}
+
+footer {
+    margin: 30px 0;
+}
+
+.modal-content {
+    border-radius: 2px !important;
+}
+
+.mr-10 {
+    margin-right: 10px !important;
+}
+
+form#checks-create, form#checks-edit {
+    border: 1px solid #eee;
+    padding: 30px;
+}

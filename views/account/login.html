@@ -1,0 +1,24 @@
+<div class="page-header">
+    <h2>Log into your Account</h2>
+</div>
+
+<form id="login" class="mt-30" method="post" action="/api/tokens">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="alert-container" id="alert-login"></div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="08123456789" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="text-right">
+                <button type="submit" class="btn bg-blue btn-lg">Login</button>
+            </div>
+        </div>
+    </div>
+</form>
